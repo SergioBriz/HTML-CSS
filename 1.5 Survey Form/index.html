@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" hreft="styles.css">
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Survey Form Practice</h1>
+      <p id="description">Formulario para practicar HTML</p>
+    <div>
+
+      <form id="survey-form">
+         <fieldset>
+          <label id="name-label" for="name">Nombre: <input type="text" required id="name" placeholder="Escribe tu nombre"></label>
+          <label id="email-label" for="email">Email: <input type="email" pattern="[a-z0-9._%+\-]+[a-z0-9.\-]+\.[a-z]{2,}$" title="Correo no válido" required id="email" placeholder="Escribe tu correo"></label>
+          <label id="number-label" for="number">Edad: <input type="number" required placeholder="Escribe tu edad(4 a 99)" min="4" max="99" title="Edad entre 4 y 99" id="number"></label>
+ </fieldset>
+
+
+      <fieldset>
+        <label for="dropdown">Elige tu equipo favorito:
+          <select id="dropdown">
+              <option>Real Betis</option>
+              <option>Madrid</option>
+              <option>Barcelona</option>        
+                  </select>
+        </label>
+
+            <label>Género:
+              <label for="hombre">Hombre
+            <input type="radio" name="gender" id="hombre" value="hombre" checked></label>
+            <label for="mujer">Mujer
+            <input type="radio" name="gender" id="mujer" value="mujer"></label>      
+        </label>
+
+        </fieldset>
+
+        <fieldset>
+
+          <label>Elige tus gustos:
+           <label for="prog">Tecnología <input type="checkbox" id="prog" name="prog" value="prog"></label>
+            <label for="viaj">Viajes <input type="checkbox" id="viaj" name="viaj" value="viaj"></label>
+             <label for="cocina">Cocina <input type="checkbox" id="cocina" name="cocina" value="cocina"></label>
+              <label for="dep">Deporte <input type="checkbox" id="dep" name="dep" value="dep"></label>
+              <label for="lec">Leer <input type="checkbox" id="lec" name="lec" value="lec"></label>
+          </label>
+        </fieldset>
+
+        <fieldset>
+            <label for="bio">Texto por si quieres escribir un poema:
+              <textarea id="bio">
+                </textarea>
+            </label>
+          </fieldset>
+
+        <fieldset>
+          <input id="submit" type="submit" method="POST" action="http://www.example.com/example.html">
+          </fieldset>
+        </form> 
+   </body>
+
+</html>

@@ -1,0 +1,23 @@
+h1, p{
+  Font-family:Verdana;
+  text-align: center;
+  padding-top:1px;
+  color: gray;
+}
+header{
+   background: #a1d1d1;
+}
+p{
+  padding-bottom:5px;
+}
+
+#image{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+figcaption{
+  text-align: center;
+  padding: 5px;
+}
